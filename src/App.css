@@ -1,0 +1,79 @@
+.app {
+  --bg-color-1: #afb5d2;
+  --bg-color-2: #ffffff;
+  --background-2: var(--bg-color-2);
+  --text-color-1: #12072b;
+  --text-color-2: #000000;
+}
+.app[dark-theme="dark"] {
+  --bg-color-1: #384792;
+  --bg-color-2: #150d27;
+  --background-2: var(--bg-color-2);
+  --text-color-1: #ffff;
+  --text-color-2: #ffffff;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: cadetblue;
+}
+.app_calculator {
+  width: 280px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--background-2);
+}
+.app_calculator_navbar {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100%;
+  min-height: 40px;
+  padding: 10px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+.app_calculator_navbar_toggle {
+  background-color: var(--bg-color-2);
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+}
+.app_calculator_navbar_toggle_circle {
+  background-color: var(--text-color-1);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.app_calculator_navbar_toggle_circle_active {
+  background-color: var(--text-color-1);
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+/* .image {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--bg-color-1);
+} */
+img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--bg-color-1);
+}
